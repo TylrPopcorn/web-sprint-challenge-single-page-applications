@@ -1,38 +1,73 @@
-.App {
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  /* background-color: red; */
+  width: 5rem;
+  height: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a:hover {
+  color: rgb(0, 255, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.topPicture {
+  background-image: url("https://cdn.discordapp.com/attachments/805958742457057311/991347126959349790/Screen_Shot_2022-06-28_at_10.19.16_AM.png?size=4096");
+  /* background-size: cover; */
+  height: 40vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageHolder {
+  background-color: red;
+  margin-top: 2%;
+  border-radius: 2px;
+  height: 60%;
+  width: 100%;
 }
+
+
+/*
+  background-image: url('https://cdn.discordapp.com/attachments/805958742457057311/991376519626752090/Screen_Shot_2022-06-28_at_12.16.15_PM.png?size=4096');
+  background-size: cover;
+  */
+.portfolio-element {
+  width: 30%;
+  margin: 1% 0;
+  /* background-color: green; */
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/*
+<img className="IMAGE"src="https://cdn.discordapp.com/attachments/805958742457057311/991371100489515118/Screen_Shot_2022-06-28_at_11.54.43_AM.png?size=4096"/> */
