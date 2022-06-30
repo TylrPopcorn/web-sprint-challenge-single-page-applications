@@ -1,3 +1,33 @@
+//WITH HELP:
+import * as yup from 'yup';
+
+const formSchema = yup.object().shape({
+    username: yup
+        .string()
+        .trim()
+        .required("name must be at least 2 characters")
+        .min(2, "name must be at least 2 characters")
+    ,
+
+    size: yup
+        .string()
+        .oneOf(["small", "medium", "large"])
+    ,
+    specialtext: yup.string(),
+    Pepperoni: yup.boolean(),
+    Sausage: yup.boolean(),
+    Pineapple: yup.boolean(),
+    blah: yup.boolean(),
+    ugh: yup.boolean
+
+
+})
+
+export default formSchema
+
+
+//MY ATTEMPT:
+/*
 import * as yup from 'yup';
 
 const formSchema = yup.object().shape({
@@ -17,10 +47,10 @@ const formSchema = yup.object().shape({
 })
 
 export default formSchema
+*/
 
 
-
-
+//NOTES:
 /*
 const formSchema = yup.object().shape({
     username: yup
